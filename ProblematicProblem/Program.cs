@@ -104,8 +104,8 @@ namespace ProblematicProblem
                 Console.WriteLine();
                 if(activities.Count == 0)
                 {
-                    Console.WriteLine("Nothing left in list. Please try again.");
-                    System.Environment.Exit(0);
+                    Console.WriteLine("\nNothing left in list. Please try again.");
+                    break;
                 }
                 int randomNumber = rng.Next(activities.Count);
                 string randomActivity = activities[randomNumber];
